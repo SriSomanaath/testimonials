@@ -1,0 +1,170 @@
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  color: #2f2f2f;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footerHead{
+  background-color: #1e1e1e;
+  width: 100%;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.footerInnerHead{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.footerHeadLabel{
+  font-size: 45px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.container, .row, .col {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1 100%;
+  margin-bottom: 20px;
+}
+
+.usefulLink h4{
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #6a6969;
+}
+
+.usefulLink li{
+  margin-bottom: 10px;
+}
+
+.innerLinks a{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.innerLinks a:hover{
+  color: #138dff;
+}
+
+.socialLinks{
+  display: flex;
+  align-items: center;
+}
+
+.socialLinks a{
+  display: flex;
+  align-items: center;
+}
+
+.footerAbout, .usefulLink, .socialLinks, .address {
+  margin-bottom: 20px;
+}
+
+.useLinks, .socialIcons, .addressLinks {
+  list-style: none;
+  padding: 0;
+}
+
+.useLinks li, .socialIcons li, .addressLinks li {
+  margin-bottom: 10px;
+}
+
+.useLinks a, .socialIcons a, .addressLinks a {
+  color: #2f2f2f;
+  text-decoration: none;
+}
+
+.copyRight {
+  background-color: #1e1e1e;
+  padding: 10px 20px; /* Added padding for responsiveness */
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.copyRightSec {
+  display: flex;
+  flex-direction: column; /* Changed to column for better stacking on smaller screens */
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.copyRightSec a {
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.copyRightSec div {
+  margin-bottom: 10px; /* Added margin for spacing between elements */
+}
+
+.copyRightSec ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Added gap for spacing between social icons */
+}
+
+.copyRightSec ul li a {
+  color: #fff;
+}
+
+.hrLine{
+  height: 1px;
+  margin: 15px 0px;
+}
+
+.opencv_features{
+  line-height: 2.5;
+}
+
+.opencv_features span{
+  font-weight: 500;
+}
+
+
+
+@media (min-width: 768px) {
+  .copyRightSec {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .copyRightSec div {
+    margin-bottom: 0; 
+  }
+
+  .copyRightSec ul {
+    margin: 0;
+  }
+}
+
+.logoFooter, .imgFluid {
+  max-width: 215px;
+  height: auto;
+}

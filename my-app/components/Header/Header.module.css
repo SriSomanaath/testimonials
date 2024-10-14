@@ -1,0 +1,131 @@
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    color: #1e1e1e;
+    z-index: 2000;
+    /* box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2); */
+    border-bottom: 1px solid #d4d3d3;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .header.scrolled {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .img_conatiner{
+    display: flex;
+    padding: 6px 0;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav a {
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+
+  .navMenu a {
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+  
+  .logoWrapper {
+    display: flex;
+    align-items: center;
+    margin: 0.8rem 0;
+  }
+  
+  .logoImage {
+    width: 100%;
+    max-width: 190px;
+    max-height: 50px;
+  }
+  
+  .menuWrapper {
+    position: relative;
+  }
+  
+  .navMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navMenu li {
+    position: initial;
+  }
+  
+  .navMenu a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+  }
+  
+  .subArrow {
+    cursor: pointer;
+  }
+
+  .subArrowIcon{
+    padding-top: 8px;
+  }
+  
+  .dropdownMenu {
+    display: none;
+    position: absolute;
+    background-color: #1e1e1e;
+    border-radius: 4px;
+    z-index: 1000;
+    list-style-type: none;
+  }
+
+  .dropdownItem{
+    font-size: 1rem;
+  }
+  
+  .dropdownItem {
+    padding: 0.5rem 1rem;
+    color: white;
+  }
+
+  .dropdownMenu{
+    color: #fff;
+  }
+
+  .dropdownMenu li {
+    border: 1px solid #f5f5f5;
+  }
+  
+  .dropdownMenu li:hover {
+    background-color: #333;
+  }
+
+  .dropdownMenu li a {
+    padding: 12px 15px;
+  }
+  
+  .navMenu li:hover .dropdownMenu {
+    display: block;
+  }
+  
+  .mobileMenuWrapper {
+    width: 16%;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .menuToggleButton {
+    color: white;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+  }
